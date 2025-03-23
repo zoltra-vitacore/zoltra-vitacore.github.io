@@ -25,9 +25,9 @@
   height: 100vh;
 
   background-image: 
-    url("./assets/background-3.jpg"),
     url("./assets/background-2.jpg"),
-    url("./assets/background.jpg");
+    url("./assets/background.jpg"),
+    url("./assets/background-3.jpg");
 
   background-size: cover, cover, cover;
   background-position: center, center, center;
@@ -37,7 +37,6 @@
 
   display: flex;
 }
-
 .hero-grid {
   display: grid;
   grid-template-columns: repeat(11, 1fr); /* 11 equal columns */
@@ -48,7 +47,13 @@
 }
 .our-products {
   height: 100vh;
+  background-color: #3D1515;
   background-image: url("./assets/background-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  mix-blend-mode: overlay;
   background-size: cover;
   padding: 20px;
   display: flex;
@@ -100,6 +105,7 @@
   border-radius: 10px;
   background-color: #380406;
   color: white;
+  border: none;
 }
 .productimg{
   background-image: url("./assets/product.jpg");
@@ -112,9 +118,13 @@
 }
 .about-us{
   height: 100vh;
-  background-image: url("./assets/background-3.jpg");
-  background: cover;
   padding: 20px;
+  background-color: #3D1515;
+  background-image: url("./assets/background-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
 }
 
 .hero-message{
@@ -136,6 +146,7 @@ nav {
   justify-content: space-between;
   width: 95%;
   padding: 20px;
+  z-index: 1000;
 }
 
 .nav-links{
@@ -260,4 +271,85 @@ body {
     font-size: 60px;
     font-weight: bolder;
   }
+}
+
+.card-container {
+  position: relative;
+  width: 400px; /* Adjust based on your design */
+  height: 300px;
+  
+}
+
+.card {
+  position: absolute;
+  width: 150px; 
+  height: 200px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  transform: rotate(-46.032deg);
+}
+
+.card-1 {
+  top: 270px;
+  left: -280px;
+  transform: rotate(-55deg);
+  width: 200px;
+  height: 255px;
+  z-index: 3;
+  background-image: url("./assets/product.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.pink-tag {
+  top: 330px;
+  left: -470px;
+  transform: rotate(-8deg);
+  height: 305px;
+  width: 250px;
+  background-image: url("./assets/pink-tag.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pink-tag-text {
+  top: 345px;
+  left: -490px;
+  transform: rotate(21deg);
+  height: 305px;
+  width: 250px;
+  color: #AD2322;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.card-2 {
+  top: 170px;
+  left: -120px;
+  transform: rotate(-19deg);
+  width: 200px;
+  height: 255px;
+  z-index: 2;
+  background-image: url("./assets/product.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.card-3 {
+  top: 184px;
+  left: 50px;
+  transform: rotate(17deg);
+  width: 200px;
+  height: 255px;
+  z-index: 1;
+  background-image: url("./assets/product.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
 }
