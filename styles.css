@@ -1,0 +1,263 @@
+.nav-img{
+  background-image: url("./assets/vitacore-hero.jpg");
+  background-size: cover;
+  height: 125px;
+  width: 310px;
+  border-radius: 20px;
+  opacity: 60%;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding-right: 30px;
+  margin-top: -50px;
+}
+.product-title{
+  font-size: 40px;
+}
+.hero {
+  padding: 10px 20px;
+  height: 100vh;
+
+  background-image: 
+    url("./assets/background-3.jpg"),
+    url("./assets/background-2.jpg"),
+    url("./assets/background.jpg");
+
+  background-size: cover, cover, cover;
+  background-position: center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+
+  background-blend-mode: overlay, multiply, normal;
+
+  display: flex;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr); /* 11 equal columns */
+  grid-template-rows: repeat(6, 1fr); /* 6 equal rows */
+  gap: 10px; /* Adjust spacing between grid items */
+  height: 100%;
+  width: 100%;
+}
+.our-products {
+  height: 100vh;
+  background-image: url("./assets/background-3.jpg");
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+.products{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.product{
+  width: 300px;
+  height: 430px;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 20px;
+  text-align: center;
+}
+.productdesc{
+  text-align: center;
+  color: black;
+  max-width: 300px;
+  word-wrap: break-word; /* Ensures long words wrap */
+  overflow-wrap: break-word; 
+  background-color: white;
+  height: 180px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 20px;
+}
+.productdesc h2{
+  display: inline-block;
+}
+
+.shop-now{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.shop-now button{
+  height: 30px;
+  width: 70px;
+  border-radius: 10px;
+  background-color: #380406;
+  color: white;
+}
+.productimg{
+  background-image: url("./assets/product.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  border-radius: 20px;
+  
+}
+.about-us{
+  height: 100vh;
+  background-image: url("./assets/background-3.jpg");
+  background: cover;
+  padding: 20px;
+}
+
+.hero-message{
+  grid-column: span 4; /* Takes up 4 columns */
+  grid-row: span 3; /* Takes up 3 rows */
+  text-align: center;
+  color: white;
+  font-size: 75px;
+  font-weight: bolder;
+}
+
+.hero-message p{
+  display: inline;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  padding: 20px;
+}
+
+.nav-links{
+  background-color: rgb(255, 255, 255, 0.6);
+  height: 125px;
+  width: 500px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+}
+
+.nav-link{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover{
+  color: rgb(116, 114, 114);
+  cursor: pointer;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-links .social-icon a {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-links .social-icon a:hover {
+  transform: scale(1.2);
+  color: #007bff;
+}
+
+.nav-links .social-icon .fa-facebook {
+  color: #3b5998;
+}
+
+.nav-links .social-icon .fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1440px) {
+  .nav-img{
+    background-image: url("./assets/vitacore-hero.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 265px;
+    border-radius: 20px;
+    opacity: 60%;
+  }
+
+  .nav-links{
+    background-color: rgb(255, 255, 255, 0.6);
+    height: 105px;
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 26px;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr); /* 11 equal columns */
+    grid-template-rows: repeat(6, 1fr); /* 6 equal rows */
+    gap: 10px; /* Adjust spacing between grid items */
+    height: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide the nav links initially */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    width: 120px;
+    height: 70Vh;
+  }
+
+  .nav-links li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+    display: block; /* Show the menu button */
+    z-index: 10;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show the nav links when .show is applied */
+  }
+
+  .nav-links {
+    display: none; /* Default to hidden */
+  }
+  
+  /* Show the menu when the 'show' class is added */
+  .nav-links.show {
+    display: flex; /* or block, depending on your layout */
+  }
+  .hero-message{
+    grid-column: span 4; /* Takes up 4 columns */
+    grid-row: span 3; /* Takes up 3 rows */
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+  }
+}
